@@ -1,0 +1,18 @@
+server:
+  port: 8000
+spring:
+  datasource:
+    username: postgres
+    password: tomatored
+    url: "jdbc:postgresql://localhost:5432/postgres"
+keycloack:
+  server:
+    contextPath: /auth
+    adminUser:
+      username: mickey
+      password: nico
+    realImportFile:
+variables:
+  kafka:
+    topics: keycloak.public.user_entity
+    group_id: identity-group
